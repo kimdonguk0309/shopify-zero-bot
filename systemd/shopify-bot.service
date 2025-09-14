@@ -1,0 +1,12 @@
+[Unit]
+Description=Shopify Zero Bot
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/ubuntu/shopify-zero-bot/main.py
+WorkingDirectory=/home/ubuntu/shopify-zero-bot
+Restart=always
+User=ubuntu
+
+[Install]
+WantedBy=multi-user.target
